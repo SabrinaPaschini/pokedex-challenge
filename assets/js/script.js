@@ -1,30 +1,36 @@
 console.log('sucesso!');
 
-//requisao via http 
-//fetsh api 
-
 const offset = 0;
 const limit = 10; 
 const url = `https://pokeapi.co/api/v2/pokemon/?offset=${offset}&limit=${limit}`;
 
-// fetch retorna uma promisse, resposta assincrona, não é imediata a response
-//como processa o sucesso de uma promisse 
-//pelo mentodo then 
+ function convertPokemonToLi(pokemon){
+    return `
+    <li class="pokemon">
 
-fetch(url)
-    .then(function(response){
-        response.json().then(function(responseBody){
-            console.log(responseBody)
-        })
+        <span class="number"> #001 </span>
+        <span class="name">${pokemon.name}</span>
+
+    <div class="detail">
+        <ol class="types">
+            <li class="type">Grass</li>
+            <li class="type">Poison</li>
+        </ol>
+        <img class="img-p"
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt ="${pokemon.name}">
+    </div>
+</li>
+
+    `
+ }
+
+const pokemonList = document.getElementById('pokemonList')
+
+pokeApi.getPokemons().then((pokemons = []) => {
+
+    const newList = pokemons.map((pokemon) => convertPokemonToLi(pokemon))
+
+    const newHtml = newList.join('')
+
+    pokemonList.innerHTML += newHtml
 })
-
-// manipular quando der algum erro 
-.catch(function(error){
-    console.log(error)
-})
-
-//independente do sucesso ou do erro, ele vai chamar o finaly quando finalizar o precoesso 
-.finally(function(){
-    console.log('Requisição concluída!')
-})
-
