@@ -65,6 +65,19 @@ img {
     font-size: large;
 }
 
+.type-api li {
+    background-color: rgb(45, 184, 119);
+    padding: .25rem .7rem;
+    margin: .5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    font-size: large;
+    list-style: none;
+
+
+
+}
+
 .pokemon .name {
     color: rgba(0, 0, 0, 0.795);
     text-transform: uppercase;

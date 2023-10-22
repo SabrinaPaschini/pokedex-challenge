@@ -4,6 +4,15 @@ const offset = 0;
 const limit = 10; 
 const url = `https://pokeapi.co/api/v2/pokemon/?offset=${offset}&limit=${limit}`;
 
+
+
+function convertPokemonTypesToli(pokemonTypes){
+    return pokemonTypes.map((typeSlot) => `<li class"type-api">${typeSlot.type.name}</li>`)
+    }
+
+
+
+
  function convertPokemonToLi(pokemon){
     return `
     <li class="pokemon">
@@ -16,9 +25,10 @@ const url = `https://pokeapi.co/api/v2/pokemon/?offset=${offset}&limit=${limit}`
 
     <div class="detail">
     <img src ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg">
-        <ol class="types">
-            <li class="type">${''}</li>
-            <li class="type"> ${''}</li>
+
+        <ol class="type-api">
+        
+            ${convertPokemonTypesToli(pokemon.types).join('')}
          
                 </ol>
            </div>
