@@ -21,7 +21,7 @@
     border-radius: .5rem;
     display: flex;
     flex-direction: column;
-    border: solid 2px rgb(34, 33, 33) ;
+    border: solid 2px rgb(34, 33, 33);
 }
 
 .pokemon .detail {
@@ -31,7 +31,6 @@
     align-self: self-end;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 img {
@@ -44,7 +43,6 @@ img {
     text-align: right;
     font-weight: 500;
     font-weight: bold;
-    
 }
 
 .pokemon .types {
@@ -53,7 +51,6 @@ img {
     list-style: none;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .pokemon .detail {
@@ -61,11 +58,9 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .pokemon .detail .types .type {
-   
     padding: .25rem .7rem;
     margin: .5rem;
     font-size: 1rem;
@@ -74,7 +69,6 @@ img {
 }
 
 .type-api li {
-   
     padding: .25rem .7rem;
     margin: .5rem;
     font-size: 1rem;
@@ -96,7 +90,7 @@ img {
     margin-bottom: .25rem;
 }
 
-h1{
+h1 {
     text-align: center;
     font-family: 'Russo One', sans-serif;
     text-transform: uppercase;
@@ -107,18 +101,21 @@ h1{
 
 
 
-.bulbasaur, .ivysaur, .venusaur {
-    background-color:#77c850 ;
-
+.bulbasaur,
+.ivysaur,
+.venusaur {
+    background-color: #77c850;
 }
 
-.charmander, .charizard, .charmeleon{
+.charmander,
+.charizard,
+.charmeleon {
     background-color: orangered;
-
-
 }
 
-.blastoise, .squirtle, .wartortle{
+.blastoise,
+.squirtle,
+.wartortle {
     background-color: aquamarine;
 
 }
@@ -127,66 +124,36 @@ h1{
     background-color: rgb(209, 129, 143);
 }
 
-h2{
+.new-div {
+
+    border: solid black 2px;
+    align-items: center;
     text-align: center;
-    font-family: 'Russo One', sans-serif;
-    text-transform: uppercase;
-    font-weight: 100;
-    font-size: xx-large;
-    color: black;
-
-}
-
-.new-detail {
-   
-    border: solid 2px rgb(5, 5, 5) ;
     width: 300px;
     height: auto;
-    padding:1rem;
-    margin-top: 1rem;
-    margin-left: 1.90rem;
-    border-radius: .550rem;
-    
-    
-}
-
-.li-new{
+    padding: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 12.5rem;
+    margin-top: 2rem;
+    border-radius: .5rem;
+    display: flex;
     flex-direction: column;
+    border: solid 2px rgb(34, 33, 33);
+}
+
+li {
     list-style: none;
-    color: rgba(0, 0, 0, 0.795);
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Russo One', sans-serif;
-    font-weight: 400;
-    padding: .800rem;
-    margin-bottom: .25rem;
- 
-
+    margin-top: 1rem;
+    margin-right: -1rem;
+    margin-left: -6rem;
 }
 
-h2, p, h3 {
-    text-align: center;
-    flex-direction: row;
-    
-}
-
-.new-img{
-    margin-right: 60rem;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 200px;
-}
-
-.card-details{
-    
-    width: 265px;
-    height: 180px;
-    background-color: rgba(230, 223, 221, 0.486);
+.card-poke {
+    background-color: rgba(255, 228, 196, 0.384);
     border-radius: 20px;
-    
-}
-
-.pokemon-bulbasaur{
-    border: solid 2px red;
+    margin-left: 1rem;
+    margin-right: 3.5rem;
+    width: 240px;
+    height: 150px;
+    flex-direction: column;
 }
