@@ -14,14 +14,15 @@
     text-align: center;
     width: 300px;
     height: auto;
-    padding: 1.5rem;
-    margin-left: 2rem;
+    padding: 1.2rem;
+    margin-left: 10rem;
     margin-right: 12.5rem;
     margin-top: 2rem;
     border-radius: .5rem;
     display: flex;
     flex-direction: column;
     border: solid 2px rgb(34, 33, 33);
+
 }
 
 .pokemon .detail {

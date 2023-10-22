@@ -24,12 +24,12 @@ function convertPokemonToLi(pokemon) {
 <ol class="pokemons" id="pokemonList"></ol>
 </section>
 <section class="new-section">
-<h1>Details Pokédex</h1>
+<h1>Details of ${pokemon.name}</h1>
 <div class="new-div">
     <ol class="new-ol">
         <li class="bulbasaur"></li>
         <div class="new-img"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg"></div>
-        <div class="card-poke"> <ol>
+        <div class="pokemon ${pokemon.name}"> <ol>
         <ol>
         <li class="new-li">Pokémon Name: ${pokemon.name}</li>
         <li class="new-li">Pokémon ID: ${pokemon.id}</li>
