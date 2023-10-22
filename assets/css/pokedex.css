@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,200&family=Raleway&family=Roboto:wght@400;500&family=Russo+One&display=swap');
+
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;
@@ -66,7 +68,10 @@ img {
 .pokemon .name {
     color: rgba(0, 0, 0, 0.795);
     text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Russo One', sans-serif;
     font-weight: 400;
     padding: .800rem;
     margin-bottom: .25rem;

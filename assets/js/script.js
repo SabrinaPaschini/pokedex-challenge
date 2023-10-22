@@ -8,17 +8,21 @@ const url = `https://pokeapi.co/api/v2/pokemon/?offset=${offset}&limit=${limit}`
     return `
     <li class="pokemon">
 
-        <span class="number"> #001 </span>
+        <span class="number"> #00${pokemon.id}</span>
         <span class="name">${pokemon.name}</span>
 
+        
+
+
     <div class="detail">
+    <img src ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg">
         <ol class="types">
-            <li class="type">Grass</li>
-            <li class="type">Poison</li>
-        </ol>
-        <img class="img-p"
-            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt ="${pokemon.name}">
-    </div>
+            <li class="type">${''}</li>
+            <li class="type"> ${''}</li>
+         
+                </ol>
+           </div>
+           
 </li>
 
     `
